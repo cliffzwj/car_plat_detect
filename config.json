@@ -1,0 +1,18 @@
+{
+  "global":{
+    "debug":true
+  },
+  "log":{
+  },
+  "detect":{
+  },
+  "recognize":{
+  },
+  "detectTest":{
+    "detectPath":"D:/sublime text project/car_plat_detect/testimage",
+    "outputPath":"D:/sublime text project/car_plat_detect/resultimage"
+  },
+  "colorTest":{
+    "colorPath":"D:/sublime text project/car_plat_detect/colour"
+  }
+}
