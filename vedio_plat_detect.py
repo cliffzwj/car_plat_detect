@@ -4,8 +4,10 @@ import cv2
 # cam = cv2.VideoCapture(1)
 cam = cv2.VideoCapture("./vedio/IMG_0673.MOV")
 frmcnt = 1
-
 timeF = 1  # 视频帧计数间隔频率
+
+# fourcc = cv2.VideoWriter_fourcc(*'DIVX')
+# out = cv2.VideoWriter('out.mp4',fourcc, 30.0, (1920,1080))
 
 while True:
     _, img = cam.read()
@@ -14,6 +16,7 @@ while True:
     img = cv2.warpAffine(img, M, (cols, rows))
     if (frmcnt % timeF == 0):  # 每隔timeF帧进行存储操作
         img, res = pp.SimpleRecognizePlateByE2E(img)
+    # out.write(img)
     cv2.imshow('plat_detect', img)
     frmcnt = frmcnt + 1
 
