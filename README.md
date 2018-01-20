@@ -1,9 +1,9 @@
 # car_plat_detect
 real time car plat detect use HyperLPR
 
-使用开源HyperLPR，动态实时捕捉中国车牌号
+利用开源的HyperLPR识别车牌，本案采用摄像头动态实时捕捉并识别中国车牌号
 
-其原理是利用cnn网络进行学习并逐帧处理视频流，可以使用摄像头捕捉车牌并同时识别车牌号码
+其原理是利用深度学习cnn网络进行学习建模，再使用学习好的模型，逐帧处理视频流并显示
 
 
 实际效果视频:
